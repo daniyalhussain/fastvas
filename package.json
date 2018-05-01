@@ -1,0 +1,19 @@
+{
+  "name": "fastvas",
+  "version": "1.0.0",
+  "description": "Responsive, fast, simple canvas design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Responsive",
+    "fast",
+    "simple",
+    "canvas",
+    "html5",
+    "javascript"
+  ],
+  "author": "Daniyal Hussain",
+  "license": "ISC"
+}
