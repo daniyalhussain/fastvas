@@ -11,7 +11,7 @@ class Text {
 
   add(ctx) {
     this.ctx = ctx;
-    draw();
+    this.draw();
   }
 
   edit(x, y, text, size, font, color) {
@@ -23,8 +23,8 @@ class Text {
     this.font = font;
     this.color = color;
 
-    clear();
-    draw();
+    this.clear();
+    this.draw();
   }
 
   draw() {

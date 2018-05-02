@@ -7,7 +7,7 @@ class Group {
     this.elements = [];
   }
 
-  add(element){
+  add(element) {
     this.elements.add(element);
   }
 

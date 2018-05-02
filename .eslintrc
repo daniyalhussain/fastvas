@@ -1,0 +1,59 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "mocha": true
+  },
+  "plugins": [
+    "import"
+  ],
+  "globals": {
+    "Twilio": true,
+    "tinymce": true,
+    "App": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "max-len": ["off"],
+    "comma-dangle": ["off"],
+    "import/extensions": 0,
+    "no-unused-vars": ["warn"],
+    "object-curly-spacing": ["off"],
+    "object-curly-newline": ["off"],
+    "padded-blocks": ["off"],
+    "brace-style": ["off"],
+    "no-param-reassign": ["off"],
+    "react/jsx-closing-bracket-location": ["off"],
+    "react/jsx-no-target-blank": ["off"],
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".js", ".jsx"]
+    }],
+    "react/prefer-stateless-function": ["off"],
+    "react/forbid-prop-types": ["off"],
+    "react/no-danger": ["off"],
+    "react/self-closing-comp": ["off"],
+    "import/no-extraneous-dependencies": ["off"],
+    "import/prefer-default-export": ["off"],
+    "class-methods-use-this": ["off"],
+    "no-underscore-dangle": ["error", {
+      "allowAfterThis": true
+    }],
+    "import/no-unresolved": ["error", {
+      "ignore": [
+        "shared/"
+      ]
+    }],
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/no-unused-state": "warn",
+    "react/jsx-closing-tag-location": "off",
+    "function-paren-newline": "off",
+
+    /* temp workaround for issue "Definition for rule 'jsx-a11y/href-no-hash' was not found" */
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+  }
+}
