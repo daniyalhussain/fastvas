@@ -14,7 +14,7 @@ class Text {
     this.draw();
   }
 
-  edit(x, y, text, size, font, color) {
+  edit(x, y, width, height, text, size, font, color) {
     this.x = x;
     this.y = y;
     this.width = width;
@@ -37,3 +37,5 @@ class Text {
     this.ctx.clearRect(this.x, this.y, this.width, this.height);
   }
 }
+
+export default Text;

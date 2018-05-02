@@ -9,3 +9,5 @@ class Canvas {
     element.draw(this.ctx);
   }
 }
+
+export default Canvas;

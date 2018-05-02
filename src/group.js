@@ -12,8 +12,10 @@ class Group {
   }
 
   redraw() {
-    this.elements.forEach(element => {
+    this.elements.forEach((element) => {
       element.draw();
     });
   }
 }
+
+export default Group;
