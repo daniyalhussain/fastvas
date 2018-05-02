@@ -5,9 +5,9 @@ import Group from './src/group';
 class Fastvas {
 
   static canvas(config) {
-    const { ctx } = config;
+    const ctx = config;
 
-    return Canvas(ctx);
+    return new Canvas(ctx);
   }
 
   static text(config) {
@@ -16,11 +16,11 @@ class Fastvas {
     const width = config.width || 0;
     const height = config.height || 0;
     const text = config.text || '';
-    const size = config.size || '';
-    const font = config.font || '';
-    const color = config.color || '';
+    const font = config.font || 'Arial';
+    const color = config.color || '#fff';
+    const textPartials = config.textPartials || '';
 
-    return Text(x, y, width, height, text, size, font, color);
+    return new Text(x, y, width, height, text, font, color, textPartials);
   }
 
   static group(config) {
@@ -29,7 +29,7 @@ class Fastvas {
     const width = config.width || 0;
     const height = config.height || 0;
 
-    return Group(x, y, width, height);
+    return new Group(x, y, width, height);
   }
 }
 

@@ -5,7 +5,7 @@ class Canvas {
   }
 
   add(element) {
-    this.elements.add(element);
+    this.elements.push(element);
     element.draw(this.ctx);
   }
 }

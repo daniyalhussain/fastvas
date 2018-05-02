@@ -8,12 +8,13 @@ class Group {
   }
 
   add(element) {
-    this.elements.add(element);
+    this.elements.push(element);
   }
 
-  redraw() {
+  draw(ctx) {
+    this.ctx = ctx || this.ctx;
     this.elements.forEach((element) => {
-      element.draw();
+      element.draw(this.ctx);
     });
   }
 }
