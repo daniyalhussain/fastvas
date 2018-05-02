@@ -1,6 +1,6 @@
 import Canvas from './src/canvas';
 import Text from './src/text';
-import Group from './src/group'
+import Group from './src/group';
 
 class Fastvas {
 

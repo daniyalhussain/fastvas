@@ -5,8 +5,13 @@
   "main": "fastvas.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit-msg": "echo 'Running pre-commit lint...' && exit 0",
     "lint": "eslint src"
   },
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "keywords": [
     "Responsive",
     "fast",
